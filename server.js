@@ -69,9 +69,9 @@ app.post('/send', (req, res) => {
 			clientSecret: process.env.CLINENTSECRET,
 			refreshToken: process.env.REFRESHTOKEN,
 		},
-		// tls: {
-		// 	rejectUnauthorized: false,
-		// },
+		tls: {
+			rejectUnauthorized: false,
+		},
 	});
 
 	// setup email data with unicode symbols
