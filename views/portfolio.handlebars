@@ -1,0 +1,347 @@
+<body class="portbody">
+    <!-- Header section 
+         Description for this section:
+         Consists of a nav bar for the name and the nav link to other pages.-->
+
+    <!-- For Developer:
+         Fixed nav bar tempatle copy from bootstrap 4.5 
+         Note: Same html header and footer code has been used for aboutme.html, contact.html and portfolio.html 
+          !!!Please be remined that amendment are required for all three tabs if any changes on header and footer section -->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <div class="contianer">
+                <!-- For Developer:
+                     Personal name in text have been used instead of brand logo as default -->
+                <h1 class="navbar-brand">Chung Hei Fuk (Ricky)</h1>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+                aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <!-- For Developer:
+                             "ml-auto" have been used to make the nav selection bar move to right hand side" -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/aboutme">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="assets/image/CV_rickyfuk_for_BCS.pdf">Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main body section
+        Description for this section:
+        Display the photo and the name of the project 
+
+        For Developer:
+        The Bootstrap Grid has been widely used for this section-->
+    <main class="portmain">
+        <section>
+            <!-- For Developer:
+                 To create the grid, the following two steps have been taken place 
+                  1. Rows function in containers by 'class:"container"''
+                  2. Columns function in rows by 'class:"row mx-0"''
+                  3. "mx-0" have been used in rows setup is designed for 
+                      reinstante the left and right margin from the default with 
+                      no margin in xs screen 
+             -->
+            <div class="container">
+                <div class="row mx-0">
+                    <!-- First row with 12 column (this row is designed for title)
+                         Details for developer:
+                         1. 12 columns have been used for screen below medium
+                         2. 10 colums have been used for screen with large according to the requirment
+                            2 rows were unused intentionally
+                        -->
+                    <div class="border col-12 pl-3 pt-4 mt-3 col-md-12 px-md-4 col-lg-10 px-lg-5 standardcol">
+                        <h2>Portfolio</h2>
+                        <!-- "hr" has been used for the break line between the heading and the content-->
+                        <hr />
+                        <!--2nd row - The main content for the portfolio
+                            This section will show the the project name and some refernce picture for an introdcution
+                            The layout for displaying the portfolio:
+                                Screen size less than medium - one row 
+                                Screen size more or equal to medium - two row
+                             Details for developer:
+                             1. 'class="text-center"' have been used for the align the image in the middle of each column 
+                             2. "img-fluid" have been used to make the image responsive
+                             3. full width (12 grid / 1 column) has been applied to the screen size less than medium
+                             4. half width (6 grid / 2 column) has been applied to the screen size more or equal to medium
+                            -->
+                        <div class="row">
+                            <div class="view px-4 col-12 col-md-6 col-lg-6 text-center">
+                                <img src="assets/image/hw2-1.jpg" class="img-fluid"
+                                    alt="a desk with an iphone, books and stationary" />
+                                <div class="mask px-4 flex-center">
+                                    <p class="image-caption mx-auto">Horiseon Refactor</p>
+                                </div>
+                                <div class="row buttonRow mx-auto">
+                                    <div class="col-6 text-center px-0">
+                                        <a href="https://rickyfuk.github.io/uwbootscamphomework1/"
+                                            class="visitsite mb-1 btn btn-outline-light btn-lg active" role="button"
+                                            aria-pressed="true">Visit Site</a>
+                                    </div>
+                                    <div class="col-6 text-center px-0">
+                                        <a href="https://github.com/rickyfuk/uwbootscamphomework1"
+                                            class="viewcode mb-2 btn btn-outline-light btn-lg active" role="button"
+                                            aria-pressed="true">View Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="view px-4 col-12 col-md-6 col-lg-6 text-center">
+                                <img src="assets/image/passwordGeneratorScreenshot2.png" class="img-fluid"
+                                    alt="Password Generator by Ricky Fuk" />
+                                <div class="mask px-4 flex-center">
+                                    <p class="image-caption mx-auto">Password Generator</p>
+                                </div>
+                                <div class="row buttonRow mx-auto">
+                                    <div class="col-6 text-center px-0">
+                                        <a href="https://rickyfuk.github.io/uwbootscamphomework3/"
+                                            class="visitsite mb-1 btn btn-outline-light btn-lg active" role="button"
+                                            aria-pressed="true">Visit Site</a>
+                                    </div>
+                                    <div class="col-6 text-center px-0">
+                                        <a href="https://github.com/rickyfuk/uwbootscamphomework3"
+                                            class="viewcode mb-2 btn btn-outline-light btn-lg active" role="button"
+                                            aria-pressed="true">View Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="view px-4 col-12 col-md-6 col-lg-6 text-center">
+                                <img src="assets/image/codequizScreenshotForPro.png" class="img-fluid"
+                                    alt="code quiz by Ricky Fuk" />
+                                <div class="mask px-4 flex-center">
+                                    <p class="image-caption mx-auto">Code Quiz</p>
+                                </div>
+                                <div class="row buttonRow mx-auto">
+                                    <div class="col-6 text-center px-0">
+                                        <a href="https://rickyfuk.github.io/uwbootscamphomework4/"
+                                            class="visitsite mb-1 btn btn-outline-light btn-lg active" role="button"
+                                            aria-pressed="true">Visit Site</a>
+                                    </div>
+                                    <div class="col-6 text-center px-0">
+                                        <a href="https://github.com/rickyfuk/uwbootscamphomework4"
+                                            class="viewcode mb-2 btn btn-outline-light btn-lg active" role="button"
+                                            aria-pressed="true">View Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="view px-4 col-12 col-md-6 col-lg-6 text-center">
+                                <img src="assets/image/workDayPlanner2.png" class="img-fluid"
+                                    alt="Day Planner by Ricky Fuk" />
+                                <div class="mask px-4 flex-center">
+                                    <p class="image-caption mx-auto">Day Planner</p>
+                                </div>
+                                <div class="row buttonRow mx-auto">
+                                    <div class="col-6 text-center px-0">
+                                        <a href="https://rickyfuk.github.io/uwbootscamphomework5/"
+                                            class="visitsite mb-1 btn btn-outline-light btn-lg active" role="button"
+                                            aria-pressed="true">Visit Site</a>
+                                    </div>
+                                    <div class="col-6 text-center px-0">
+                                        <a href="https://github.com/rickyfuk/uwbootscamphomework5"
+                                            class="viewcode mb-2 btn btn-outline-light btn-lg active" role="button"
+                                            aria-pressed="true">View Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="view px-4 col-12 col-md-6 col-lg-6 text-center">
+                                <img src="assets/image/weatherDashboardScreenshot2.png" class="img-fluid"
+                                    alt="Day Planner by Ricky Fuk" />
+                                <div class="mask px-4 flex-center">
+                                    <p class="image-caption mx-auto">Weather Dashboard</p>
+                                </div>
+                                <div class="row buttonRow mx-auto">
+                                    <div class="col-6 text-center px-0">
+                                        <a href="https://rickyfuk.github.io/uwbootscamphomework6/"
+                                            class="visitsite mb-1 btn btn-outline-light btn-lg active" role="button"
+                                            aria-pressed="true">Visit Site</a>
+                                    </div>
+                                    <div class="col-6 text-center px-0">
+                                        <a href="https://github.com/rickyfuk/uwbootscamphomework6"
+                                            class="viewcode mb-2 btn btn-outline-light btn-lg active" role="button"
+                                            aria-pressed="true">View Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="view px-4 col-12 col-md-6 col-lg-6 text-center">
+                                <img src="assets/image/dndBuddy_project1ScreenshotForPro.png" class="img-fluid"
+                                    alt="image with the name and the character picture" />
+                                <div class="mask px-4 flex-center">
+                                    <p class="image-caption mx-auto">DnD Buddy</p>
+                                </div>
+                                <div class="row buttonRow mx-auto">
+                                    <div class="col-6 text-center px-0">
+                                        <a href="https://wmwassmann.github.io/dndbuddy-1/"
+                                            class="visitsite mb-1 btn btn-outline-light btn-lg active" role="button"
+                                            aria-disabled="true">Visit Site</a>
+                                    </div>
+                                    <div class="col-6 text-center px-0">
+                                        <a href="https://github.com/wmwassmann/dndbuddy-1"
+                                            class="viewcode mb-2 btn btn-outline-light btn-lg active" role="button"
+                                            aria-disabled="true">View Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="view px-4 col-12 col-md-6 col-lg-6 text-center">
+                                <img src="assets/image/noteTakerScreenshot2.png" class="img-fluid"
+                                    alt="image with the name and the character picture" />
+                                <div class="mask px-4 flex-center">
+                                    <p class="image-caption mx-auto">Notes Taker</p>
+                                </div>
+                                <div class="row buttonRow mx-auto">
+                                    <div class="col-6 text-center px-0">
+                                        <a href="https://rf-notetaker-app.herokuapp.com/notes"
+                                            class="visitsite mb-1 btn btn-outline-light btn-lg active" role="button"
+                                            aria-disabled="true">Visit Site</a>
+                                    </div>
+                                    <div class="col-6 text-center px-0">
+                                        <a href="https://github.com/rickyfuk/NoteTaker"
+                                            class="viewcode mb-2 btn btn-outline-light btn-lg active" role="button"
+                                            aria-disabled="true">View Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="view px-4 col-12 col-md-6 col-lg-6 text-center">
+                                <img src="assets/image/burgerlogger2_ScreenshotForPro.png" class="img-fluid"
+                                    alt="image with the name and the character picture" />
+                                <div class="mask px-4 flex-center">
+                                    <p class="image-caption mx-auto">Burger Logger</p>
+                                </div>
+                                <div class="row buttonRow mx-auto">
+                                    <div class="col-6 text-center px-0">
+                                        <a href="https://rf-burgerlogger-2020.herokuapp.com/"
+                                            class="visitsite mb-1 btn btn-outline-light btn-lg active" role="button"
+                                            aria-disabled="true">Visit Site</a>
+                                    </div>
+                                    <div class="col-6 text-center px-0">
+                                        <a href="https://github.com/rickyfuk/burgerLogger"
+                                            class="viewcode mb-2 btn btn-outline-light btn-lg active" role="button"
+                                            aria-disabled="true">View Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="view px-4 col-12 col-md-6 col-lg-6 text-center">
+                                <img src="assets/image/dndbuddy2.0screenshot.png" class="img-fluid"
+                                    alt="image with the name and the character picture" />
+                                <div class="mask px-4 flex-center">
+                                    <p class="image-caption mx-auto">DnD Buddy 2.0</p>
+                                </div>
+                                <div class="row buttonRow mx-auto">
+                                    <div class="col-6 text-center px-0">
+                                        <a href=" https://dndbuddy2-live.herokuapp.com/login"
+                                            class="visitsite mb-1 btn btn-outline-light btn-lg active" role="button"
+                                            aria-disabled="true">Visit Site</a>
+                                    </div>
+                                    <div class="col-6 text-center px-0">
+                                        <a href="https://github.com/wmwassmann/dnd-buddy-2.0"
+                                            class="viewcode mb-2 btn btn-outline-light btn-lg active" role="button"
+                                            aria-disabled="true">View Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="col-12 col-md-6 col-lg-6 text-center"> 
+									<img
+										src="assets/image/codequizScreenshotForPro.png"
+										alt="code quiz screenshot"
+										class="img-fluid image-responsive"
+									/>
+									<div class="image-caption mx-auto">Code Quiz</div>
+									<div class="row buttonRow mx-auto">
+										<div class="col-6 text-center px-0">
+											<a
+												href="https://rickyfuk.github.io/uwbootscamphomework4/"
+												class="visitsite mb-1 btn btn-outline-light btn-lg active"
+												role="button"
+												aria-pressed="true"
+												>Visit Site</a
+											>
+										</div>
+										<div class="col-6 text-center px-0">
+											<a
+												href="https://github.com/rickyfuk/uwbootscamphomework4"
+												class="viewcode mb-1 btn btn-outline-light btn-lg active"
+												role="button"
+												aria-pressed="true"
+												>View Code</a
+											>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-12 col-md-6 col-lg-6 text-center">
+									<img
+										src="assets/image/hw2-5.jpg"
+										alt="a few cups on a cafe table"
+										class="img-fluid image-responsive"
+									/>
+									<div class="image-caption mx-auto">Coming Soon</div>
+									<div class="row buttonRow mx-auto">
+										<div class="col-6 text-center px-0">
+											<a
+												href="#"
+												class="visitsite mb-1 btn btn-outline-light btn-lg active"
+												role="button"
+												aria-pressed="true"
+												>Visit Site</a
+											>
+										</div>
+										<div class="col-6 text-center px-0">
+											<a
+												href="#"
+												class="viewcode mb-1 btn btn-outline-light btn-lg active"
+												role="button"
+												aria-pressed="true"
+												>View Code</a
+											>
+										</div>
+									</div>
+								</div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section
+    Description for this section:
+    A sticky footer with the copyright and the sign. 
+    (The footer will follow the viewpoint to roll down) 
+    Details for developer:
+    1. "fixed-bottom" bootstrap class have been used to make the footer sticky
+    -->
+    <footer class="fixed-bottom">
+        <!-- Create a grid inside the footer -->
+        <div class="container">
+            <div class="row">
+                <!-- First 4 column in the row to put the linkden and facebook logo
+                     Details for developer:
+                     1. Added "d-flex" and "Justfify-content-start" to align the logo at the right hand side  
+                 -->
+                <div class="col-4 d-flex justify-content-start">
+                    <a href="https://linkedin.com/in/ricky-fuk-a77466139">
+                        <img src="assets/image/linkedin.png" alt="linkedin logo" />
+                    </a>
+                    <a href="https://facebook.com/rickyfukfuk">
+                        <img src="assets/image/facebook.png" alt="linkedin logo" />
+                    </a>
+                </div>
+                <!-- Second 4 column in the row to put the copy message -->
+                <div class="col-4">Copyright &copy;</div>
+            </div>
+        </div>
+    </footer>
+</body>

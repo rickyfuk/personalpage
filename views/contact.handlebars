@@ -1,0 +1,144 @@
+<body class="contactbody">
+    <!-- Header section 
+         Description for this section:
+         Consists of a nav bar for the name and the nav link to other pages.-->
+
+    <!-- For Developer:
+         Fixed nav bar tempatle copy from bootstrap 4.5 
+         Note: Same html header and footer code has been used for aboutme.html, contact.html and portfolio.html 
+          !!!Please be remined that amendment are required for all three tabs if any changes on header and footer section -->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <div class="contianer">
+                <!-- For Developer:
+                         Personal name in text have been used instead of brand logo as default -->
+                <h1 class="navbar-brand">Chung Hei Fuk (Ricky)</h1>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+                aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <!-- For Developer:
+                                 "ml-auto" have been used to make the nav selection bar move to right hand side -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/aboutme">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="assets/image/CV_rickyfuk_for_BCS.pdf">Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main body section
+        Description for this section:
+        A form for the reader to enter the personal infomation for future contact 
+
+        For Developer:
+        One section has been used for the form-->
+    <main>
+        <section>
+            <!-- For Developer:
+                 To create the grid, the following two steps have been taken place 
+                  1. Rows function in containers by 'class:"container"''
+                  2. Columns function in rows by 'class:"row mx-0"''
+                  3. "mx-0" have been used in rows setup is designed for 
+                      reinstante the left and right margin from the default with 
+                      no margin in xs screen -->
+            <div class="container">
+                <div class="row mx-0">
+                    <!-- First row with 12 column (this row is designed for title)
+                         For developer:
+                         1. 12 columns have been used for screen below medium
+                         2. 10 colums have been used for screen with large according to the requirment
+                            2 rows were unused intentionally -->
+                    <div class="border col-12 mx-2 px-3 py-4 mt-3 col-md-12 px-md-4 col-lg-10 px-lg-5 standardcol">
+                        <h2>
+                            Contact
+                        </h2>
+                        <!-- For Developer:
+                             "hr" has been used for the break line between the heading and the content-->
+                        <hr />
+                        {{{msg}}}
+                        <!-- The form for submit the contact information -->
+                        <form method="POST" action="send">
+                            <!-- The name section for the user to enter their name -->
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Name </label>
+                                <!-- add an example for the name format by placeholder for the user to follow -->
+                                <input type="text" class="contactmeName form-control" id="formGroupExampleInput"
+                                    name='name' placeholder="e.g. John Joe" />
+                            </div>
+                            <!-- The email section for the user to enter their email -->
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Email address </label>
+                                <!-- add an example for the email format by placeholder for the user to follow -->
+                                <input type="email" class="form-control contactmeEmail" name="email"
+                                    id="exampleFormControlInput1" placeholder="e.g. name@example.com" />
+                                <div class="emailreminder">
+                                    please ensure enter the correct email "abc@abc.com" format
+                                </div>
+                            </div>
+                            <!-- The message section for the user to enter a free flow message to me -->
+                            <div class="form-group" id="message">
+                                <label for="exampleFormControlTextarea1">Message </label>
+                                <!-- add the "free text" for the reader to follow easier and increase the default row as 7 -->
+                                <textarea class="contactmeMessage form-control" name="message"
+                                    id="exampleFormControlTextarea1" rows="7" placeholder="Free text"></textarea>
+                            </div>
+                            <!-- add a button for submitting the form to me -->
+                            <button type="submit" class="btn btn-secondary">
+                                Submit
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section
+    Description for this section:
+    A sticky footer with the copyright and the sign. 
+    (The footer will follow the viewpoint to roll down) 
+    Details for developer:
+    1. "fixed-bottom" bootstrap class have been used to make the footer sticky
+    -->
+    <footer class="fixed-bottom">
+        <!-- Create a grid inside the footer -->
+        <div class="container">
+            <div class="row">
+                <!-- First 4 column in the row to put the linkden and facebook logo
+                     Details for developer:
+                     1. Added "d-flex" and "Justfify-content-start" to align the logo at the right hand side  
+                 -->
+                <div class="col-4 d-flex justify-content-start">
+                    <a href="https://linkedin.com/in/ricky-fuk-a77466139">
+                        <img src="assets/image/linkedin.png" alt="linkedin logo" />
+                    </a>
+                    <a href="https://facebook.com/rickyfukfuk">
+                        <img src="assets/image/facebook.png" alt="linkedin logo" />
+                    </a>
+                </div>
+                <!-- Second 4 column in the row to put the copy message -->
+                <div class="col-4">
+                    Copyright &copy;
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script src="assets/js/contactmeFrontEnd.js"></script>

@@ -1,0 +1,725 @@
+/* Section 1 - Full*/
+/* Style for the all the following 3 pages
+    1. aboutme.html
+    2. contact.html
+    3. portfolio.html
+    All the style apply to all 3 pages unless specified otherwise */
+* {
+	box-sizing: border-box;
+}
+/* end of Section 1*/
+
+/* Section 2 - Body*/
+/* Style for the body
+    Details for developer:
+    -add the padding for the space for nav bar
+    -add the padding for the space for footer
+    -add the background-size to ensure the background-image appear only once
+    -add the background-color before the image is loaded 
+    -Set the background always located in the center
+    -Set the background picture to roll down with the viewpont 
+     (background-position/background-attachment/background-repeat)
+    -Please refer to the large screen setting for specific setting */
+.contactbody,
+.portbody,
+.aboutmebody {
+	padding-top: 7.5rem;
+	padding-bottom: 7.5rem;
+	background-size: cover;
+	background-color: #343a40;
+	background-position: center center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+/* end of Section 2 */
+
+/* Section 3 - Nav Bar */
+/* Part 1 style for the nav bar
+        Details for developer:
+        -add "padding right" to increase the space for the toggle or the nav item to the border
+        -add "border-bottom" for the orange line beneath the nav bar */
+.navbar {
+	padding-top: 0;
+	padding-bottom: 0;
+	font-family: 'Raleway', sans-serif;
+	padding-right: 3vw;
+	background-color: #343a40 !important;
+	border-bottom: 0.2vw solid rgb(220, 105, 1) !important;
+}
+/* end of part 1 */
+
+/* Part 2 Style for the name of the heading 
+        Details for developer:
+            -add "margin-left" to increase the space from the border to the name box
+            -add "padding" to extend the box size
+            -add "line-height" to extend the box x-value to touch the celling and the nav bar bottom */
+.navbar-brand {
+	background-color: rgb(220, 105, 1);
+	color: #343a40 !important;
+	margin-left: 1rem;
+	margin-bottom: 0;
+	padding: 2vw 2vw;
+	font-size: 1.25rem;
+	line-height: 3.5rem;
+}
+/* end of Part 2 */
+
+/* Part 3 style for the link setting for the nav bar 
+        Details for developer:
+        The color have been set for the following 5 coditions:
+            #normal (regular light grey - rgb (155,155,155))
+            #visited (darker light grey - rgb (180,180,180))
+            #hover (orange with bold - rgb (220,105,1))
+            #focus (orange with bold and orange outline  
+                               text  - rgb (220,105,1)
+                            outline  - rgb (220,105,1))
+            #active (orange-yellow - rgb (240,196,157))    */
+.navbar .navbar-nav li a {
+	color: rgb(155, 155, 155) !important;
+}
+
+.navbar .navbar-nav li a:visited {
+	color: rgb(180, 180, 180) !important;
+}
+
+.navbar .navbar-nav li a:hover {
+	color: rgb(220, 105, 1) !important;
+	font-weight: bold;
+}
+
+.navbar .navbar-nav li a:focus {
+	color: rgb(220, 105, 1) !important;
+	font-weight: bold;
+	outline-color: rgb(220, 105, 1) !important ;
+}
+
+.navbar .navbar-nav li a:active {
+	color: rgb(240, 196, 157) !important;
+}
+/* end of part 3 */
+
+/* Part 4 Style for toggler - Change the toggler color 
+        Details for developer:
+        -Margin have been added to increase the space between the border and the toggler 
+        (otherwise the toggler will be too close to celling or the nav bar bottom border)
+        -The following color tone has been set for the toggler 
+            # normal status
+            ## border as light grey
+            # hover status
+            ## orange background and border
+        */
+.navbar-toggler {
+	border-color: rgb(140, 140, 140) !important;
+	background-color: #343a40;
+	margin: 1rem;
+}
+
+.navbar-toggler:hover {
+	border-color: rgb(220, 105, 1) !important;
+	background-color: rgb(220, 105, 1);
+}
+/* end of part 4 */
+/* end of Section 3 */
+
+/* Section 4 - Content*/
+/* Part 1 Style for the main body content 
+    Details for developer:
+        - Add the margin between the main body and the footer
+        - Set all the text as orange inside the body (unless specific) 
+    */
+main {
+	margin-bottom: 4vh;
+	color: rgb(220, 105, 1);
+}
+/* end of part 1 */
+
+/* Part 2 Style for the all standard outer container box 
+        Details for developer:
+            - Set the background as slightly transparent light black for better reflect the text
+            - Set the border color as "Orange"
+            - Add the bottom padding in order to avoid the gap is too narrow 
+            between the text and the box border
+            - Add the width between the column box and the side border to 
+            override the default setting (too narrow).  
+        */
+.standardcol {
+	background-color: rgba(29, 29, 29, 0.7);
+	padding-bottom: 1.5vh;
+	border-color: rgb(220, 105, 1) !important;
+	margin: 0 0.5vw !important;
+}
+/* end of part 2 */
+
+/* Part 3 Style for "hr" line */
+/*    Details for developer:
+        Set the break line between the the container title and the content as "Orange" */
+hr {
+	background-color: rgb(220, 105, 1);
+}
+/* end of part 3 */
+
+/* Part 4  Style for "h2" object*/
+/* Details for developer: 
+        Set the container title for: 
+            - font-type:Quicksand
+            - font-size: 2rem 
+        */
+h2 {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 2rem;
+}
+/* end of Part 4 */
+
+/* Part 5 Style for the paragraph in "Home" page*/
+/* **THIS PART FOR "aboutme.html" ONLY**
+        Details for developer:
+        Set the style for the cotent of the main paragraph of "ABOUT ME"
+        */
+.aboutmemain p {
+	font-family: 'Nunito', sans-serif;
+	font-size: 1rem;
+}
+/* end of Part 5 */
+
+/* Part 6 Style for the Portfolio image*/
+/* **THIS PART FOR "Portfolio.html" only**
+        Details for developer:
+        Set the image style for "Portfolio" as follow:
+            - The image size will bounded within 300 to 400px 
+            - Align the image in the center
+        */
+.portmain .img {
+	width: 400px;
+	text-align: center;
+}
+
+.portmain .img-fluid {
+	width: 100%;
+}
+/* end of part 6 */
+
+/* Part 7a Style for the Portfolio image caption */
+/* **THIS PART FOR "Portfolio.html" only** */
+/*  Details for developer:
+            Set the image caption style for each image in "Portfolio" as follow: 
+            - font-type:Nunito
+            - set the position as relative and bottom as 0, so the text will fell on the image
+            - Set the Z-index in order to stay on a upper layer
+            - Set the text color, font size and background color
+            - Set the max-width to bounded the size of the background
+        */
+
+.portmain .imageHolder {
+	/* position: relative; */
+	/* width: 400px;
+	height: 400px; */
+}
+
+.view {
+	position: relative !important;
+	overflow: hidden !important;
+	cursor: default;
+}
+.view .mask {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100% !important;
+	overflow: hidden;
+	background-attachment: fixed;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.portmain .flex-center {
+	display: flex;
+	align-items: flex-end;
+	padding-bottom: 30%;
+	justify-content: center;
+	height: 100% !important;
+}
+
+.portmain .image-caption {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Nunito', sans-serif;
+	padding-top: auto;
+	padding-bottom: auto;
+	color: #343a40;
+	font-size: 1.6rem;
+	background-color: rgb(220, 105, 1);
+	width: 100%;
+	height: 15%;
+}
+/* end of Part 7a */
+
+/* Part 7b Style for view code button*/
+/* **THIS PART FOR "Portfolio.html" only** */
+/*  Details for developer:
+            Set the view code button style for each image in "Portfolio" as follow: 
+            - font-type:Nunito
+            - set the position as relative and top as -20px in order to reduce the gap between the image and the button
+            - Set the text color, font size and background color
+            - Set the width 
+            - Set the hover status as bold
+            - Set the focus status as bold and the outline as orange
+            - Set the active status to change the word in orange-yellow
+        */
+.portmain .buttonRow {
+	width: 90%;
+	margin-top: 30px;
+}
+
+.portmain .visitsite {
+	font-family: 'Quicksand', sans-serif;
+	position: relative;
+	top: -20px;
+	width: 100%;
+	background-color: transparent !important;
+	color: rgb(220, 105, 1) !important;
+	border-radius: 0;
+	border-top: transparent;
+	border-bottom: transparent;
+	border-left: transparent;
+	border-color: rgb(220, 105, 1) !important;
+}
+
+.portmain .visitsite:hover {
+	font-weight: bold;
+}
+
+.portmain .visitsite:focus {
+	font-weight: bold;
+	outline-color: rgb(220, 105, 1) !important ;
+	box-shadow: none !important;
+}
+
+.portmain .visitsite:active {
+	outline-color: rgb(240, 196, 157) !important;
+}
+
+.portmain .viewcode {
+	font-family: 'Quicksand', sans-serif;
+	position: relative;
+	top: -20px;
+	width: 100%;
+	background-color: transparent !important;
+	color: rgb(220, 105, 1) !important;
+	border-radius: 0;
+	border-color: transparent !important;
+}
+
+.portmain .viewcode:hover {
+	font-weight: bold;
+}
+
+.portmain .viewcode:focus {
+	font-weight: bold;
+	outline-color: rgb(220, 105, 1) !important;
+	box-shadow: none !important;
+}
+
+.portmain .viewcode:active {
+	outline-color: rgb(240, 196, 157) !important;
+}
+
+/* end of Part 7b */
+
+/* Part 8 Style for the form */
+/* **THIS PART FOR "contact.html" only** */
+/*  Part 1 Style for the input area
+             Details for developer:
+             - Set the background and border as transpartent 
+             - Set the input area background and border (except bottom one) as transparent
+             - Set the bottom border in "Orange" 
+          */
+.form-control {
+	background-color: transparent;
+	border: transparent;
+	border-bottom: 1px solid rgb(220, 105, 1);
+	border-radius: 0px;
+	font-family: 'Quicksand', sans-serif;
+}
+/*  Part 2 Style for the input area during focus status
+             Details for developer:
+             - Set the background and border reamin as the non-focus status 
+             ( the default setting is blue border and white background ) 
+             - took out the shadow feature from default
+             - set the text as "Orange" 
+          */
+.form-control:focus {
+	background-color: transparent !important;
+	color: rgb(220, 105, 1) !important;
+	border-color: rgb(220, 105, 1);
+	box-shadow: none;
+}
+/*  Part 3 Style for the input area when the input is DONE without error
+             Details for developer:
+             - Set the text color in "Light Grey"
+          */
+.form-control:valid {
+	color: rgb(140, 140, 140);
+}
+/*  Part 4 Style for the input area when the input is DONE with error
+             Details for developer:
+             - Set the text color in "Light Red"
+             - Set the 4 side border in "Light Red"
+             - add the "not(:focus)" in order not to activate this style when the user is still typing
+          */
+input:not(:placeholder-shown):not(:focus):invalid {
+	color: rgb(250, 145, 145);
+	border: rgb(250, 145, 145) 3px solid;
+	border-radius: 5px;
+}
+/*  Part 5 Style for the reminder for the email style
+             Details for developer:
+             - Set the text color in "orange"
+             - Set the text style as "italic" and change it smaller
+          */
+.emailreminder {
+	font-size: 80%;
+	font-style: italic;
+	padding-top: 1vh;
+	padding-left: 1vw;
+}
+/*  Part 6 Style for the text area for the message box 
+             Details for developer:
+             - Set the 4 border as "orange"
+          */
+textarea.form-control {
+	border: rgb(220, 105, 1) 1px solid;
+	border-radius: 5px;
+}
+/*  Part 7 Style for the submit button 
+             Details for developer:
+             - Set the button as "orange" background
+          */
+.contactbody .btn-secondary {
+	background-color: rgb(220, 105, 1);
+	border: none;
+}
+/* end of part 8 */
+
+/* Part 9 Style for small device (landscape phones, 200px and up)*/
+@media screen and (min-width: 200px) {
+	/* Unit 1 Style for personal image in Home Page*/
+	/*  **THIS UNIT FOR "aboutme.html" ONLY** */
+	/*  Details for developer:
+                Set the width as 90% for the bio-image for small screen */
+	.aboutmemain #bio-image {
+		width: 90%;
+	}
+	/* end of Unit 1 */
+
+	/* Unit 2 Style for background image */
+	/* Segment 1 Background style for Home 
+                    Detail for developer:
+                    In the small screen of the "aboutme.html", the background image "1738994" is used */
+	/*  **THIS SEGMENT FOR "aboutme.html" ONLY** */
+	.aboutmebody {
+		background-image: url(../image/pexels-photo-1738994-2.jpeg);
+	}
+	/* end of Segment 1 */
+
+	/* Segment 2 Background style for Portfolio 
+                    Detail for developer:
+                    In the small screen of the "portfolio,html", the background image "768125" is used */
+	/*  **THIS SEGMENT FOR "portfolio.html" ONLY** */
+	.portbody {
+		background-image: url(../image/pexels-photo-768125-portfolio.jpeg);
+	}
+	/* end of Segment 2 */
+
+	/* Segment 3 Background style for Contact 
+                    Detail for developer:
+                    In the small screen of the "contact.html", the background image "1591062" is used*/
+	/*  **THIS SEGMENT FOR "contact.html" ONLY** */
+	.contactbody {
+		background-image: url(../image/pexels-photo-1591062-contact-2.jpeg);
+	}
+	/* end of Segment 3 */
+	/* end of Unit 2 */
+}
+/* end of Part 9 */
+
+/* Part 10 Style for Medium devices (tablets, 768px and up)*/
+@media screen and (min-width: 768px) {
+	/*  Unit 1 Style for personal image in Home Page
+                Details for developer:
+                Set the max-width as 250px for the bio-image medium screen */
+	.aboutmemain #bio-image {
+		max-width: 250px;
+	}
+	/* end of Unit 1 */
+
+	/*  Unit 2 Style for the nav bar for medium and large screen
+                Details for developer:
+                Change the setting of the Name brand because the toggler 
+                does not require anymore:
+                    - add a margin-left to extend the space between 
+                    the left border and the Name box
+                    - reduce the line-height from 3.5rem to 3rem
+                    - change the padding to better fit the name in the name box */
+	.navbar-brand {
+		margin-left: 4vw;
+		padding: 1vw 3vw;
+		line-height: 3rem;
+	}
+
+	/* Unit 3 Style for background image */
+	/* Segment 1 Background style for Home 
+                    Detail for developer:
+                    In the middle size screen of the "aboutme.html", the background image "1383562" */
+	/*  **THIS SEGMENT FOR "aboutme.html" ONLY** */
+	.aboutmebody {
+		background-image: url(../image/pexels-photo-1383562.jpeg);
+	}
+	/* end of Segment 1 */
+
+	/* Segment 2 Background style for Portfolio 
+                    Detail for developer:
+                    In the middle screen of the "portfolio.html", the background image change to "256453" */
+	/*  **THIS SEGMENT FOR "portfolio.html" ONLY** */
+	.portbody {
+		background-image: url(../image/mainPortfolio.jpg);
+	}
+	/* end of Segment 2 */
+
+	/* Segment 3 Background style for Contact 
+                    Detail for developer:
+                    In the middle screen of the "contact.html", the background image change to "327540" */
+	/*  **THIS SEGMENT FOR "contact.html" ONLY** */
+	.contactbody {
+		background-image: url(../image/pexels-photo-327540-contact.jpeg);
+	}
+	/* end of Segment 3 */
+	/* end of Unit 3 */
+}
+/* end of Part 10 */
+
+/* Part 11 Style for Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	/*  Unit 1 Style for personal image in Home Page
+                Details for developer:
+                Set the max-width as 200px for large screen */
+	.aboutmemain #bio-image {
+		max-width: 200px;
+	}
+	/* end of Unit 1 */
+
+	/*  Unit 2 Style for the nav bar for medium and large screen
+                Details for developer: 
+                The background image with the following setting: 
+                - same image adpot from the middle size screen style 
+                - The image will only stay in the original position 
+                (not rolling down with the viewpoint)*/
+	/*  **THIS UNIT FOR "aboutme.html" ONLY** */
+	.aboutmebody {
+		background-attachment: initial;
+	}
+	/* end the Unit 2 */
+}
+/* end of Part 11 */
+/* end of Section 4 */
+
+/* Section 5 - Footer */
+/* Part 1 Style for the Footer body
+        Details for developer:
+        - Set the position as "Relative" and "Bottom" as 0 to ensure the footer will only shown up at the bottom of the page
+        - Make the text as middle
+        - Set the width as 100% in order to cover from front to end in all conditions
+        - Add padding to extend the text and the border space
+        - Adjust the font size, text color (light grey) and background color (dark light black). 
+        - Add a orange top border line for the footer box */
+footer {
+	text-align: center;
+	width: 100%;
+	padding: 2vw;
+	font-size: 1.2rem;
+	background-color: #343a40;
+	color: rgb(155, 155, 155);
+	border-top: 3px solid rgb(220, 105, 1);
+}
+/* end of part 1 */
+
+/* Part 2 Style for the Social Media logo in the footer
+       Details for developer:
+        - Remove the photo border by setting the border as 0
+        - Set the width of the image as 30px
+        - Add the padding to insert some space between logos */
+footer img {
+	border: 0px;
+	width: 30px;
+	padding-right: 1.2vh;
+}
+/* end of Section 5 */
+
+/* Section 6 - Landing Page */
+/* part 1 - the body of the landing page 
+        Details for developer:
+        - Set the height for the html page as full screen*/
+.landinghtml {
+	height: 100%;
+}
+/* end of part 1 */
+
+/* part 2 - the style setting for the top part during the small screen */
+/* unit 1 - set the top part height as half page */
+.landingPage .topsm {
+	height: 50%;
+}
+/* end of unit 1 */
+
+/* unit 2 - set the style for the "hello" part */
+.landingPage .smhead1jumbo {
+	font-family: 'Comfortaa', cursive;
+	background-color: #343a40;
+	color: rgb(220, 105, 1);
+	height: 40%;
+	padding-top: 50px;
+}
+
+.landingPage .smhead1jumbo h1 {
+	font-size: 20vw;
+	line-height: 0.6 !important;
+}
+/* end of unit 2 */
+
+/* unit 3 - set the style for the "I AM RICKY FUK" part */
+.landingPage .smhead2jumbo {
+	font-family: 'Comfortaa', cursive;
+	background-color: rgb(220, 105, 1);
+	color: whitesmoke;
+	font-size: 2rem !important;
+	height: 60%;
+}
+/* end of unit 3 */
+/* end of part 2 */
+
+/* part 3 - the style setting for the top part during the med screen or above */
+/* Details for developer: 
+            Thus part have broken into 4 piece
+            -toptopleft
+            -toptopright
+            -topbottomleft
+            -topbottomright
+            where 4 rectangles boxes*/
+/* unit 1 - the overall style */
+.landingPage .topmd {
+	height: 50% !important;
+	max-width: 100% !important;
+	font-family: 'Comfortaa', cursive;
+}
+/* end of unit 1 */
+
+/* unit 2 - the style for first row (toptopleft + toptopright) */
+.landingPage .toptoprow {
+	height: 40% !important;
+}
+/* end of unit 2 */
+
+/* unit 3 - the style for second row (topbottomleft + topbottomright) */
+.landingPage .topbottomrow {
+	height: 60% !important;
+}
+/* end of unit 3 */
+
+/* unit 4 - the style for toptopleft */
+.landingPage .topmd .toptopleft {
+	background-color: #343a40;
+	color: rgb(220, 105, 1);
+	margin: 0;
+	height: 40%;
+}
+
+.landingPage .topmd .toptopleft h1 {
+	font-size: 8vw !important;
+	border-spacing: 0px;
+	padding-top: 100px;
+	line-height: 0.65 !important;
+	padding-right: 30px;
+}
+/* end of unit 4 */
+
+/* unit 5 - the style for toptopright */
+.landingPage .topmd .toptopright {
+	background-color: rgb(220, 105, 1);
+}
+/* end of unit 5 */
+
+/* unit 6 - the style for topbottomleft */
+.landingPage .topmd .topbottomleft {
+	background-color: #343a40;
+}
+/* end of unit 6 */
+
+/* unit 7 - the style for topbottomright */
+.landingPage .topmd .topbottomright {
+	background-color: rgb(220, 105, 1);
+	color: whitesmoke;
+	margin: 0;
+	height: 60%;
+}
+
+.landingPage .topmd .topbottomright h1 {
+	font-size: 5vw !important;
+	border-spacing: 0px;
+	padding-bottom: 100px;
+	line-height: 0.9 !important;
+}
+/* end of unit 7 */
+
+/* end of Part 3 */
+
+/* part 4 - style for the bottom */
+.landingPage .bottom {
+	min-height: 500px;
+}
+
+.landingPage .landingselfimg img {
+	border-radius: 50%;
+	border-style: solid;
+	border-color: rgb(220, 105, 1);
+	border-width: 2.5px;
+}
+
+.landingPage .landingtext {
+	font-family: 'Raleway', sans-serif;
+	color: rgb(220, 105, 1);
+	font-size: 2.5em;
+}
+/* for the get started button */
+.landingPage .btn-secondary {
+	background-color: rgb(220, 105, 1);
+	border: none;
+	color: whitesmoke;
+}
+
+.landingPage .btn-secondary:hover {
+	color: rgb(155, 155, 155);
+	border-color: rgb(155, 155, 155);
+	border-width: 10px;
+}
+
+/* end of get stated button */
+.landingPage .bottom {
+	background-color: black;
+	background-image: url(../image/landingpagebackground.jpeg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+}
+
+/* for the logo in the landing page */
+.landinglogo img {
+	border: 0px;
+	width: 30px;
+	padding-right: 1.2vh;
+}
+
+/* end of part 4 */
+/* end of section 6 */
